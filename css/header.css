@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+header {
+  background: #000
+}
+/****
+
+MOBILE MENU BTN | HAMBURGER
+
+****/
+/****OPEN | BUTTON****/
+#btn-mob-menu-open {
+  display: block;
+  background: url(../img-brand/img-brand.svg) 1% 50%/100% no-repeat;
+  background-size: 350px;
+  padding: 1% 1.25%;
+  margin-right: 1%;
+  height: 50px;
+  width: 50px;
+}
+button.navbar-toggler {
+  outline: none;
+  border: none;
+}
+/****CLOSE | BUTTON****/
+#btn-mob-menu-close {
+  display: none;
+  background: url(../img-brand/img-brand.svg) 17% 50%/100% no-repeat;
+  background-size: 350px;
+  padding: 1% 1.25%;
+  margin-right: 1%;
+  height: 50px;
+  width: 50px;
+  animation: fade_anime 1s ease-out;
+}
+/****
+
+LOGO
+
+****/
+#logo {
+  background: url(../img-brand/img-brand.svg) 0px 0px/100% no-repeat;
+  background-size: 350px;
+  padding: 1% 1.25%;
+  margin-right: 1%;
+  height: 50px;
+  width: 50px;
+  animation: fade_anime 1s ease-out;
+}
+
+@media (max-width:767px) {
+#logo {
+  margin-right: calc(50% - 25px);
+}
+}
+#logo:hover {
+  -webkit-animation: rotation 1s 1 linear;
+}
+@-webkit-keyframes rotation {
+ from {
+ -webkit-transform: rotate(0deg);
+}
+ to {
+ -webkit-transform: rotate(359deg);
+}
+}
+/****
+
+NAV LINKS
+
+****/
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(253,84,84,1.00);
+  animation: color_anime 0.25s ease-out;
+}
+nav div#navbarNavDropdown ul li {
+  margin: auto 5%
+}
+
+@media (max-width:767px) {
+nav div#navbarNavDropdown ul li a {
+  margin: 3% 5%;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: 900;
+}
+nav div#navbarNavDropdown ul li:first-of-type a {
+  border-top: 1px solid #fff;
+  padding-top: 6%;
+}
+nav div#navbarNavDropdown ul li:last-of-type a {
+  padding-bottom: 25%;
+}
+}

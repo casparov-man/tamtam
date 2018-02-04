@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TAMTAM | Pedro Peralta</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!--  CSS Libraries -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--  CSS Client -->
+<link href="css/theme.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
+<link href="css/form-contact.css" rel="stylesheet" type="text/css">
+<!--  JS Libraries -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!--  JS Client -->
+<script src="js/theme.js" rel="stylesheet"></script>
+<script src="js/header.js" rel="stylesheet"></script>
+<script src="js/form.js" rel="stylesheet"></script>
+</head>
+
+<body>
+<!--
+HEADER
+-->
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <div id="btn-mob-menu-open"></div>
+    <div id="btn-mob-menu-close"></div>
+    </button>
+    <div id="logo"> <a class="navbar-brand" href="#"></a> </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item"> <a class="nav-link" href="tamtam.html">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">People</a> </li>
+        <li class="nav-item active"> <a class="nav-link" href="#">Contact</a> </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!--
+FORM 
+-->
+<section id="formContact" class="bg-img-snow pt-5 pb-5">
+  <div class="container formContact">
+    <div class="row">
+      <div class="col-sm-8 offset-2 text-center text-white">
+        <h1>WE WOLD LOVE TO<br>
+          HEAR FROM YOU</h1>
+      </div>
+    </div>
+    <form>
+      <label class="formAlert" title="alert">
+      <div class="icon alertIcon"></div>
+      Please complete the form and try again.
+      </label>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="firstName" placeholder="First name">
+          <label class="labelAlert" title="alert">
+          <div class="arrow-up"></div>
+          We need your first name.
+          </label>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="lastName" placeholder="Last name">
+          <label class="labelAlert" title="alert">
+          <div class="arrow-up"></div>
+          We need your last name.
+          </label>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="email" class="form-control" id="formEmail" placeholder="Your e-mail address">
+          <label class="labelAlert" title="alert">
+          <div class="arrow-up"></div>
+          Please use a valid e-mail address.
+          </label>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="formPhone" placeholder="Your phone number (optional)">
+        </div>
+        <div class="form-group col-md-12">
+          <textarea class="form-control" id="formMessage" rows="3" placeholder="Your message..."></textarea>
+          <label class="labelAlert" title="alert">
+          <div class="arrow-up"></div>
+          Sorry, your message can’t be empty.
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-secondary text-center mt-5">Send</button>
+    </form>
+  </div>
+</section>
+<!--
+FOOTER 
+-->
+<footer class="container-fluid"> <a class="btn-brand btn-facebook-w" href="#"></a> <a class="btn-brand btn-twitter-w" href="#"></a> <a class="btn-brand btn-instagram-w" href="#"></a> </footer>
+</body>
+</html>

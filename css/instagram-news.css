@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.instagram-news figure  {
+  background-color: #fff;
+  max-width: 300px
+}
+.instagram-news figure figcaption  {
+  text-align: left;
+  padding: 15px 15px;
+}

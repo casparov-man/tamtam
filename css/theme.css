@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {min-width: 320px;}
+/****
+
+FONTS
+
+****/
+/****GENERAL****/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+html, body {
+  font-family: lato;
+}
+h1,h2,h3,h4,h5,h6 {font-weight: 900}
+/****COLORS****/
+.color-black {color: #000;}
+.color-pale-blue {color: #789199}
+/****WEIGHT****/
+.weight-300 { font-weight: 300; }
+.weight-400 { font-weight: 400; }
+.weight-900 { font-weight: 900; }
+/****
+
+CONSTANTS
+
+****/
+:root {
+--site-sprite: url(../img-brand/img-brand.svg)
+}
+@keyframes fade_anime {
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
+@keyframes color_anime {
+ from {
+color: #fff;
+}
+ to {
+color: #ff5454;
+}
+}
+/****
+
+BUTTONS
+
+****/
+/****MAIN | BUTTONS - Bootstrap override****/
+.btn {
+  border-radius: 50px;
+  padding: 10px 50px;
+  animation: fade_anime 1s ease-out;
+}
+.btn-primary {
+  background: #000;
+  border: #000
+}
+.btn-secondary {
+  background: #FF5454;
+  border: #FF5454
+}
+.btn-primary:hover {
+  background: #121212;
+  border: #121212
+}
+.btn-secondary:hover {
+  background: #FF7676;
+  border: #FF7676
+}
+/****SOCIAL | BUTTONS****/
+.btn-brand a {display: block}
+.btn-brand {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  transition: background-position-y 0.5s;
+  -webkit-transition: background-position-y 0.5s;
+  -moz-transition: background-position-y 0.5s;
+  -o-transition: background-position-y 0.5s;
+}
+.btn-brand:hover {
+  animation-name: fade_anime;
+  background-position-y: 99%;
+  animation: fade_anime 1s ease-out;
+}
+.btn-facebook-w {
+  background: url(../img-brand/img-brand.svg) 33.33% 50%/700% no-repeat;
+}
+.btn-twitter-w {
+  background: url(../img-brand/img-brand.svg) 50% 50%/700% no-repeat;
+}
+.btn-instagram-w {
+  background: url(../img-brand/img-brand.svg) 66.66% 50%/700% no-repeat;
+}
+/****
+
+BACKGROUNDS
+
+****/
+.bg-dark {
+  background-color: rgba(0,0,0,.9)!important;
+}
+.bg-img-snow {
+  background-image: url(../img/bck2.jpg);
+  background-size: cover;
+}
+/****
+
+ICONS
+
+****/
+.icon {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: -2% 3% -2% 0;
+}
+.alertIcon {
+  background: rgba(0,0,0,0.25)url(../img-brand/img-brand.svg) 66.5% 0%/700% no-repeat; 
+}
